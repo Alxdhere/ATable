@@ -1,0 +1,91 @@
+object frmAlxdStyleEditor: TfrmAlxdStyleEditor
+  Left = 0
+  Top = 0
+  ActiveControl = tvStyleProperties
+  Caption = 'frmAlxdStyleEditor'
+  ClientHeight = 323
+  ClientWidth = 339
+  Color = clBtnFace
+  Constraints.MinHeight = 350
+  Constraints.MinWidth = 315
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lStyleProperty: TTntLabel
+    Left = 8
+    Top = 8
+    Width = 68
+    Height = 13
+    Caption = 'lStyleProperty'
+  end
+  object lValue: TTntLabel
+    Left = 8
+    Top = 178
+    Width = 28
+    Height = 13
+    Caption = 'lValue'
+  end
+  object bvBrowse: TBevel
+    Left = 56
+    Top = 119
+    Width = 50
+    Height = 50
+  end
+  object cbValue: TTntComboBox
+    Left = 96
+    Top = 175
+    Width = 235
+    Height = 21
+    ItemHeight = 0
+    TabOrder = 0
+    Text = 'cbValue'
+  end
+  object bCancel: TButton
+    Left = 256
+    Top = 202
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'bCancel'
+    Default = True
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object bApply: TButton
+    Left = 175
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = 'bApply'
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object bBrowse: TButton
+    Left = 94
+    Top = 202
+    Width = 75
+    Height = 25
+    Caption = '...'
+    TabOrder = 3
+    OnClick = bBrowseClick
+  end
+  object tvStyleProperties: TAlxdTreeView
+    Left = 129
+    Top = 48
+    Width = 168
+    Height = 113
+    Indent = 19
+    TabOrder = 4
+    OnAdvancedCustomDrawItem = tvStylePropertiesAdvancedCustomDrawItem
+    OnChanging = tvStylePropertiesChanging
+    OnDeletion = tvStylePropertiesDeletion
+    OnKeyPress = tvStylePropertiesKeyPress
+  end
+end
