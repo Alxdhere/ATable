@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XTextWidthFactor.1 = s 'XTextWidthFactor Class'
+	{
+		CLSID = s '{AEC36E14-30B6-4081-B16F-455BB518977E}'
+	}
+	Grid.XTextWidthFactor = s 'XTextWidthFactor Class'
+	{
+		CLSID = s '{AEC36E14-30B6-4081-B16F-455BB518977E}'
+		CurVer = s 'Grid.XTextWidthFactor.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {AEC36E14-30B6-4081-B16F-455BB518977E} = s 'XTextWidthFactor Class'
+		{
+			ProgID = s 'Grid.XTextWidthFactor.1'
+			VersionIndependentProgID = s 'Grid.XTextWidthFactor'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

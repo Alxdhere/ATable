@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XTextFit.1 = s 'XTextFit Class'
+	{
+		CLSID = s '{EEEDE9C5-055E-4D42-8865-A0467267BEAF}'
+	}
+	Grid.XTextFit = s 'XTextFit Class'
+	{
+		CLSID = s '{EEEDE9C5-055E-4D42-8865-A0467267BEAF}'
+		CurVer = s 'Grid.XTextFit.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EEEDE9C5-055E-4D42-8865-A0467267BEAF} = s 'XTextFit Class'
+		{
+			ProgID = s 'Grid.XTextFit.1'
+			VersionIndependentProgID = s 'Grid.XTextFit'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XTextHeight.1 = s 'XTextHeight Class'
+	{
+		CLSID = s '{1C4A69AA-B314-4681-A995-B6E3D2FB39E0}'
+	}
+	Grid.XTextHeight = s 'XTextHeight Class'
+	{
+		CLSID = s '{1C4A69AA-B314-4681-A995-B6E3D2FB39E0}'
+		CurVer = s 'Grid.XTextHeight.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1C4A69AA-B314-4681-A995-B6E3D2FB39E0} = s 'XTextHeight Class'
+		{
+			ProgID = s 'Grid.XTextHeight.1'
+			VersionIndependentProgID = s 'Grid.XTextHeight'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

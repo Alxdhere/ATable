@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XFillCell.1 = s 'XFillCell Class'
+	{
+		CLSID = s '{1C2DEA26-3290-4847-8AC5-B2564E67753C}'
+	}
+	Grid.XFillCell = s 'XFillCell Class'
+	{
+		CLSID = s '{1C2DEA26-3290-4847-8AC5-B2564E67753C}'
+		CurVer = s 'Grid.XFillCell.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1C2DEA26-3290-4847-8AC5-B2564E67753C} = s 'XFillCell Class'
+		{
+			ProgID = s 'Grid.XFillCell.1'
+			VersionIndependentProgID = s 'Grid.XFillCell'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

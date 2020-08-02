@@ -1,0 +1,137 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""AlxdGrid.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "Grid ObjectARX application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Grid"
+            VALUE "LegalCopyright", "Copyright © 2002"
+            VALUE "OriginalFilename", "AlxdGrid.arx"
+            VALUE "ProductName", "Grid Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_GRID                REGISTRY                "Grid.rgs"
+IDR_XCOLCOUNT           REGISTRY                "XColCount.rgs"
+IDR_XCELLTEXT           REGISTRY                "XCellText.rgs"
+IDR_XROWCOUNT           REGISTRY                "XRowCount.rgs"
+IDR_XDEFAULTSIZE        REGISTRY                "XDefaultSize.rgs"
+IDR_XTEXTHEIGHT         REGISTRY                "XTextHeight.rgs"
+IDR_XTEXTWIDTHFACTOR    REGISTRY                "XTextWidthFactor.rgs"
+IDR_XTEXTOBLIQUEANGLE   REGISTRY                "XTextObliqueAngle.rgs"
+IDR_XTEXTMARGINSLEFT    REGISTRY                "XTextMarginsLeft.rgs"
+IDR_XTEXTMARGINSTOP     REGISTRY                "XTextMarginsTop.rgs"
+IDR_XTEXTMARGINSRIGHT   REGISTRY                "XTextMarginsRight.rgs"
+IDR_XTEXTMARGINSBOTTOM  REGISTRY                "XTextMarginsBottom.rgs"
+IDR_XTEXTSTYLE          REGISTRY                "XTextStyle.rgs"
+IDR_XDRAWBORDER         REGISTRY                "XDrawBorder.rgs"
+IDR_XFILLCELL           REGISTRY                "XFillCell.rgs"
+IDR_XTEXTFIT            REGISTRY                "XTextFit.rgs"
+IDR_XTEXTTYPE           REGISTRY                "XTextType.rgs"
+IDR_XSTYLENAME          REGISTRY                "XStyleName.rgs"
+IDR_XJUSTIFY            REGISTRY                "XJustify.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "Grid"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "AlxdGrid.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

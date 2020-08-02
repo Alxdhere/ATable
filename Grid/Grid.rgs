@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'Grid'
+		'AlxdGrid.arx'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XJustify.1 = s 'XJustify Class'
+	{
+		CLSID = s '{1456767D-50CB-4E70-824E-6C689D95F2EE}'
+	}
+	Grid.XJustify = s 'XJustify Class'
+	{
+		CLSID = s '{1456767D-50CB-4E70-824E-6C689D95F2EE}'
+		CurVer = s 'Grid.XJustify.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1456767D-50CB-4E70-824E-6C689D95F2EE} = s 'XJustify Class'
+		{
+			ProgID = s 'Grid.XJustify.1'
+			VersionIndependentProgID = s 'Grid.XJustify'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

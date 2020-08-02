@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XRowCount.1 = s 'XRowCount Class'
+	{
+		CLSID = s '{B83EEF7A-6D05-4F97-A38D-6C078EE7B7FC}'
+	}
+	Grid.XRowCount = s 'XRowCount Class'
+	{
+		CLSID = s '{B83EEF7A-6D05-4F97-A38D-6C078EE7B7FC}'
+		CurVer = s 'Grid.XRowCount.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B83EEF7A-6D05-4F97-A38D-6C078EE7B7FC} = s 'XRowCount Class'
+		{
+			ProgID = s 'Grid.XRowCount.1'
+			VersionIndependentProgID = s 'Grid.XRowCount'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

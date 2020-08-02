@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XColCount.1 = s 'XColCount Class'
+	{
+		CLSID = s '{8D13AC9A-D15E-4F05-B680-DBD3AAB59FCA}'
+	}
+	Grid.XColCount = s 'XColCount Class'
+	{
+		CLSID = s '{8D13AC9A-D15E-4F05-B680-DBD3AAB59FCA}'
+		CurVer = s 'Grid.XColCount.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {8D13AC9A-D15E-4F05-B680-DBD3AAB59FCA} = s 'XColCount Class'
+		{
+			ProgID = s 'Grid.XColCount.1'
+			VersionIndependentProgID = s 'Grid.XColCount'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

@@ -1,0 +1,357 @@
+// (C) Copyright 2002-2005 by Autodesk, Inc. 
+
+// Grid.idl : IDL source
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (AlxdGrid.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+//import "acadi.idl";
+
+	[
+		object,
+		uuid(B0721B6A-0944-469B-9B2A-E3D56BFEEE2A),
+		dual,
+		nonextensible,
+		helpstring("IXColCount Interface"),
+		pointer_default(unique)
+	]
+	interface IXColCount : IDispatch	{
+	};
+	[
+		object,
+		uuid(A04F9621-73A0-4C15-88E8-203A5B56AF0E),
+		dual,
+		nonextensible,
+		helpstring("IXCellText Interface"),
+		pointer_default(unique)
+	]
+	interface IXCellText : IDispatch	{
+	};
+	[
+		object,
+		uuid(66ADD026-8668-4249-828B-114D01BE3D39),
+		dual,
+		nonextensible,
+		helpstring("IXRowCount Interface"),
+		pointer_default(unique)
+	]
+	interface IXRowCount : IDispatch	{
+	};
+	[
+		object,
+		uuid(206DF71F-88AF-4076-A4F0-05BC8FF3B85C),
+		dual,
+		nonextensible,
+		helpstring("IXDefaultSize Interface"),
+		pointer_default(unique)
+	]
+	interface IXDefaultSize : IDispatch	{
+	};
+	[
+		object,
+		uuid(6AD4A4D4-17D1-4E3A-AD43-B7C006D894EF),
+		dual,
+		nonextensible,
+		helpstring("IXTextHeight Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextHeight : IDispatch	{
+	};
+	[
+		object,
+		uuid(3B84B819-094C-435C-A6BB-14D5FC342870),
+		dual,
+		nonextensible,
+		helpstring("IXTextWidthFactor Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextWidthFactor : IDispatch	{
+	};
+	[
+		object,
+		uuid(A2029015-A9CE-4A24-B36C-4F7BEDD04F5C),
+		dual,
+		nonextensible,
+		helpstring("IXTextObliqueAngle Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextObliqueAngle : IDispatch	{
+	};
+	[
+		object,
+		uuid(13BC4F19-73D5-4170-8FE9-A6C938BFB080),
+		dual,
+		nonextensible,
+		helpstring("IXTextMarginsLeft Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextMarginsLeft : IDispatch	{
+	};
+	[
+		object,
+		uuid(783A4EF5-A004-4173-8577-1A4FA1CA9D85),
+		dual,
+		nonextensible,
+		helpstring("IXTextMarginsTop Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextMarginsTop : IDispatch	{
+	};
+	[
+		object,
+		uuid(E859BDDB-6A9D-49BD-8AC3-ED07C877B17F),
+		dual,
+		nonextensible,
+		helpstring("IXTextMarginsRight Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextMarginsRight : IDispatch	{
+	};
+	[
+		object,
+		uuid(2AE5A433-0395-4BD2-9FFC-7DF4F8A718E8),
+		dual,
+		nonextensible,
+		helpstring("IXTextMarginsBottom Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextMarginsBottom : IDispatch	{
+	};
+	[
+		object,
+		uuid(CBC5492F-A705-4E1C-8A00-6D09B18AD0A1),
+		dual,
+		nonextensible,
+		helpstring("IXTextStyle Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextStyle : IDispatch	{
+	};
+	[
+		object,
+		uuid(88318CD8-9C62-4A58-B3BC-552E5A031D34),
+		dual,
+		nonextensible,
+		helpstring("IXDrawBorder Interface"),
+		pointer_default(unique)
+	]
+	interface IXDrawBorder : IDispatch	{
+	};
+	[
+		object,
+		uuid(9DAC1423-4EF6-455B-A654-1B71F040F3EB),
+		dual,
+		nonextensible,
+		helpstring("IXFillCell Interface"),
+		pointer_default(unique)
+	]
+	interface IXFillCell : IDispatch	{
+	};
+	[
+		object,
+		uuid(59A53735-45D6-4095-8C18-AC922B430FDE),
+		dual,
+		nonextensible,
+		helpstring("IXTextFit Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextFit : IDispatch	{
+	};
+	[
+		object,
+		uuid(258BC0F4-A118-48CD-827D-2510FFCCA3EC),
+		dual,
+		nonextensible,
+		helpstring("IXTextType Interface"),
+		pointer_default(unique)
+	]
+	interface IXTextType : IDispatch	{
+	};
+	[
+		object,
+		uuid(42DF7F0D-1F91-4371-85FD-0025290A3F92),
+		dual,
+		nonextensible,
+		helpstring("IXStyleName Interface"),
+		pointer_default(unique)
+	]
+	interface IXStyleName : IDispatch	{
+	};
+	[
+		object,
+		uuid(6FE44EEE-514F-44C5-B749-4B34325F4007),
+		dual,
+		nonextensible,
+		helpstring("IXJustify Interface"),
+		pointer_default(unique)
+	]
+	interface IXJustify : IDispatch	{
+	};
+[
+	uuid(645B5823-22E9-49C7-A711-4D496A87FD49),
+	version(1.0),
+	helpstring("AlxdGrid 1.0 Type Library")
+]
+library AlxdGridLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	//----- If the following import fails then it means that the type library 
+	//----- is not on the system path you can fix the problem in two ways:
+	//----- 1. Add it to the system wide PATH environment variable
+	//----- 2. Add it to the executable file list in Developer Studio. You can do
+	//----- this in using the Tools/Option menu and then choosing the 'Directories'
+	//----- tab and finally typing the full path at the Executable files section.
+
+	//----- Importing english is ok here. Autodesk doesn't localize this idl/tlb.
+	//----- axdb16enu.tlb is guaranteed to be available in all locales.
+	//----- If you want to provide localized typelib then you must import
+	//----- localized tlb here.
+	importlib("C:\\Program Files\\Common Files\\Autodesk Shared\\axdb18enu.tlb");
+	[
+		uuid(8D13AC9A-D15E-4F05-B680-DBD3AAB59FCA),
+		helpstring("XColCount Class")
+	]
+	coclass XColCount
+	{
+		[default] interface IXColCount;
+	};
+	[
+		uuid(058EB710-D1A3-4BD0-8C24-B161375453DC),
+		helpstring("XCellText Class")
+	]
+	coclass XCellText
+	{
+		[default] interface IXCellText;
+	};
+	[
+		uuid(B83EEF7A-6D05-4F97-A38D-6C078EE7B7FC),
+		helpstring("XRowCount Class")
+	]
+	coclass XRowCount
+	{
+		[default] interface IXRowCount;
+	};
+	[
+		uuid(679D47B6-DC5D-4044-9F17-89D4B4ADAC69),
+		helpstring("XDefaultSize Class")
+	]
+	coclass XDefaultSize
+	{
+		[default] interface IXDefaultSize;
+	};
+	[
+		uuid(1C4A69AA-B314-4681-A995-B6E3D2FB39E0),
+		helpstring("XTextHeight Class")
+	]
+	coclass XTextHeight
+	{
+		[default] interface IXTextHeight;
+	};
+	[
+		uuid(AEC36E14-30B6-4081-B16F-455BB518977E),
+		helpstring("XTextWidthFactor Class")
+	]
+	coclass XTextWidthFactor
+	{
+		[default] interface IXTextWidthFactor;
+	};
+	[
+		uuid(3B2F3D36-88EF-4911-892B-B5E33726C4A5),
+		helpstring("XTextObliqueAngle Class")
+	]
+	coclass XTextObliqueAngle
+	{
+		[default] interface IXTextObliqueAngle;
+	};
+	[
+		uuid(62BCA396-2FBD-42FE-AE75-ED96CB12FE14),
+		helpstring("XTextMarginsLeft Class")
+	]
+	coclass XTextMarginsLeft
+	{
+		[default] interface IXTextMarginsLeft;
+	};
+	[
+		uuid(59A0A23D-15CD-48C9-95E8-3A9C6132468E),
+		helpstring("XTextMarginsTop Class")
+	]
+	coclass XTextMarginsTop
+	{
+		[default] interface IXTextMarginsTop;
+	};
+	[
+		uuid(A07318B7-43CF-4792-9B97-0CD112D00310),
+		helpstring("XTextMarginsRight Class")
+	]
+	coclass XTextMarginsRight
+	{
+		[default] interface IXTextMarginsRight;
+	};
+	[
+		uuid(9A57846C-3978-4917-A355-2CA336A13D06),
+		helpstring("XTextMarginsBottom Class")
+	]
+	coclass XTextMarginsBottom
+	{
+		[default] interface IXTextMarginsBottom;
+	};
+	[
+		uuid(223F0517-9CA5-4A34-BEFB-377306FC7FF6),
+		helpstring("XTextStyle Class")
+	]
+	coclass XTextStyle
+	{
+		[default] interface IXTextStyle;
+	};
+	[
+		uuid(2F525FDD-F494-4972-9A42-5E93491B9D45),
+		helpstring("XDrawBorder Class")
+	]
+	coclass XDrawBorder
+	{
+		[default] interface IXDrawBorder;
+	};
+	[
+		uuid(1C2DEA26-3290-4847-8AC5-B2564E67753C),
+		helpstring("XFillCell Class")
+	]
+	coclass XFillCell
+	{
+		[default] interface IXFillCell;
+	};
+	[
+		uuid(EEEDE9C5-055E-4D42-8865-A0467267BEAF),
+		helpstring("XTextFit Class")
+	]
+	coclass XTextFit
+	{
+		[default] interface IXTextFit;
+	};
+	[
+		uuid(18B6BAD4-C5F4-4C07-807D-E3F9469E86F3),
+		helpstring("XTextType Class")
+	]
+	coclass XTextType
+	{
+		[default] interface IXTextType;
+	};
+	[
+		uuid(D1AED31C-82B9-40D0-B16E-0F66689E9F2F),
+		helpstring("XStyleName Class")
+	]
+	coclass XStyleName
+	{
+		[default] interface IXStyleName;
+	};
+	[
+		uuid(1456767D-50CB-4E70-824E-6C689D95F2EE),
+		helpstring("XJustify Class")
+	]
+	coclass XJustify
+	{
+		[default] interface IXJustify;
+	};
+};

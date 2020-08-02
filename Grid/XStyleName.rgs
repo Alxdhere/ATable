@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XStyleName.1 = s 'XStyleName Class'
+	{
+		CLSID = s '{D1AED31C-82B9-40D0-B16E-0F66689E9F2F}'
+	}
+	Grid.XStyleName = s 'XStyleName Class'
+	{
+		CLSID = s '{D1AED31C-82B9-40D0-B16E-0F66689E9F2F}'
+		CurVer = s 'Grid.XStyleName.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D1AED31C-82B9-40D0-B16E-0F66689E9F2F} = s 'XStyleName Class'
+		{
+			ProgID = s 'Grid.XStyleName.1'
+			VersionIndependentProgID = s 'Grid.XStyleName'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

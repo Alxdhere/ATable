@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XTextMarginsLeft.1 = s 'XTextMarginsLeft Class'
+	{
+		CLSID = s '{62BCA396-2FBD-42FE-AE75-ED96CB12FE14}'
+	}
+	Grid.XTextMarginsLeft = s 'XTextMarginsLeft Class'
+	{
+		CLSID = s '{62BCA396-2FBD-42FE-AE75-ED96CB12FE14}'
+		CurVer = s 'Grid.XTextMarginsLeft.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {62BCA396-2FBD-42FE-AE75-ED96CB12FE14} = s 'XTextMarginsLeft Class'
+		{
+			ProgID = s 'Grid.XTextMarginsLeft.1'
+			VersionIndependentProgID = s 'Grid.XTextMarginsLeft'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

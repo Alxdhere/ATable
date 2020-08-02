@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XCellText.1 = s 'XCellText Class'
+	{
+		CLSID = s '{058EB710-D1A3-4BD0-8C24-B161375453DC}'
+	}
+	Grid.XCellText = s 'XCellText Class'
+	{
+		CLSID = s '{058EB710-D1A3-4BD0-8C24-B161375453DC}'
+		CurVer = s 'Grid.XCellText.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {058EB710-D1A3-4BD0-8C24-B161375453DC} = s 'XCellText Class'
+		{
+			ProgID = s 'Grid.XCellText.1'
+			VersionIndependentProgID = s 'Grid.XCellText'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

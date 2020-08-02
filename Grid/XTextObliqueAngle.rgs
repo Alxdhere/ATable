@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XTextObliqueAngle.1 = s 'XTextObliqueAngle Class'
+	{
+		CLSID = s '{3B2F3D36-88EF-4911-892B-B5E33726C4A5}'
+	}
+	Grid.XTextObliqueAngle = s 'XTextObliqueAngle Class'
+	{
+		CLSID = s '{3B2F3D36-88EF-4911-892B-B5E33726C4A5}'
+		CurVer = s 'Grid.XTextObliqueAngle.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {3B2F3D36-88EF-4911-892B-B5E33726C4A5} = s 'XTextObliqueAngle Class'
+		{
+			ProgID = s 'Grid.XTextObliqueAngle.1'
+			VersionIndependentProgID = s 'Grid.XTextObliqueAngle'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}

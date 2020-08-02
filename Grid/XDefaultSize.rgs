@@ -1,0 +1,27 @@
+HKCR
+{
+	Grid.XDefaultSize.1 = s 'XDefaultSize Class'
+	{
+		CLSID = s '{679D47B6-DC5D-4044-9F17-89D4B4ADAC69}'
+	}
+	Grid.XDefaultSize = s 'XDefaultSize Class'
+	{
+		CLSID = s '{679D47B6-DC5D-4044-9F17-89D4B4ADAC69}'
+		CurVer = s 'Grid.XDefaultSize.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {679D47B6-DC5D-4044-9F17-89D4B4ADAC69} = s 'XDefaultSize Class'
+		{
+			ProgID = s 'Grid.XDefaultSize.1'
+			VersionIndependentProgID = s 'Grid.XDefaultSize'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{645B5823-22E9-49C7-A711-4D496A87FD49}'
+		}
+	}
+}
