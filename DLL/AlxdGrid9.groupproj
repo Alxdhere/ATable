@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{78e99c0d-efe0-408b-a37d-49b766c98b2b}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""><Default.Personality></Default.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="AlxdGrid">
+    <MSBuild Projects="AlxdGrid.dproj" Targets="" />
+  </Target>
+  <Target Name="AlxdGrid:Clean">
+    <MSBuild Projects="AlxdGrid.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="AlxdGrid:Make">
+    <MSBuild Projects="AlxdGrid.dproj" Targets="Make" />
+  </Target>
+  <Target Name="testModules" DependsOnTargets="AlxdGrid">
+    <MSBuild Projects="testModules.dproj" Targets="" />
+  </Target>
+  <Target Name="testModules:Clean" DependsOnTargets="AlxdGrid:Clean">
+    <MSBuild Projects="testModules.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="testModules:Make" DependsOnTargets="AlxdGrid:Make">
+    <MSBuild Projects="testModules.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Alxd">
+    <MSBuild Projects="Alxd.dproj" Targets="" />
+  </Target>
+  <Target Name="Alxd:Clean">
+    <MSBuild Projects="Alxd.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="Alxd:Make">
+    <MSBuild Projects="Alxd.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="AlxdGrid;testModules;Alxd" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="AlxdGrid:Clean;testModules:Clean;Alxd:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="AlxdGrid:Make;testModules:Make;Alxd:Make" />
+  </Target>
+</Project>

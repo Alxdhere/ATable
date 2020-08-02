@@ -1,0 +1,78 @@
+object frmAlxdFormatForm: TfrmAlxdFormatForm
+  Left = 578
+  Top = 104
+  BorderIcons = [biSystemMenu]
+  Caption = 'FormatForm'
+  ClientHeight = 398
+  ClientWidth = 411
+  Color = clBtnFace
+  Constraints.MinHeight = 420
+  Constraints.MinWidth = 330
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lValue: TTntLabel
+    Left = 8
+    Top = 291
+    Width = 29
+    Height = 13
+    Caption = 'lValue'
+  end
+  object lCellProperty: TTntLabel
+    Left = 8
+    Top = 8
+    Width = 58
+    Height = 13
+    Caption = 'lCellProperty'
+  end
+  object bCancel: TButton
+    Left = 336
+    Top = 352
+    Width = 75
+    Height = 25
+    Cancel = True
+    Caption = 'bCancel'
+    Default = True
+    ModalResult = 2
+    TabOrder = 0
+  end
+  object bApply: TButton
+    Left = 248
+    Top = 352
+    Width = 75
+    Height = 25
+    Caption = 'bApply'
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object cbValue: TComboBox
+    Left = 96
+    Top = 288
+    Width = 153
+    Height = 21
+    ItemHeight = 0
+    TabOrder = 2
+    Text = 'cbValue'
+    OnSelect = cbValueSelect
+  end
+  object tvCellProperties: TAlxdTreeView
+    Left = 8
+    Top = 27
+    Width = 395
+    Height = 246
+    HideSelection = False
+    Indent = 19
+    TabOrder = 3
+    OnAdvancedCustomDrawItem = tvCellPropertiesAdvancedCustomDrawItem
+    OnChanging = tvCellPropertiesChanging
+    OnDeletion = tvCellPropertiesDeletion
+    OnKeyPress = tvCellPropertiesKeyPress
+  end
+end

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{204ce2fc-e55d-46f7-ae43-3cd018d780af}</ProjectGuid>
+    <MainSource>AlxdGrid.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug Dll</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>AlxdGrid.dll</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_IncludePath>
+    <DCC_Define>DLL</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_IncludePath>
+    <DCC_Define>DEBUGCOM;DEBUG;DEBUG</DCC_Define>
+    <DCC_RemoteDebug>True</DCC_RemoteDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug Exe|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_DebugInfoInExe>True</DCC_DebugInfoInExe>
+    <DCC_DebugVN>True</DCC_DebugVN>
+    <DCC_RemoteDebug>True</DCC_RemoteDebug>
+    <DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_IncludePath>
+    <DCC_Define>DEBUGCOM;DEBUG;DEBUG</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug Dll|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_UnitSearchPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_UnitSearchPath>
+    <DCC_ResourcePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ResourcePath>
+    <DCC_ObjPath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_ObjPath>
+    <DCC_IncludePath>$(BDS)\lib\Debug;$(BDS)\Lib\Debug\Indy10;C:\Program Files\TntWare\Delphi Unicode Controls\Source</DCC_IncludePath>
+    <DCC_Define>DLL;DEBUG;DEBUGCOM</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="HostApplication">C:\Program Files\AutoCAD 2010\acad.exe</Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="Debug Symbols Search Path">D:\Александр\Visual Studio 2005\Projects\Grid\Grid\Debug</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">True</VersionInfo><VersionInfo Name="AutoIncBuild">True</VersionInfo><VersionInfo Name="MajorVer">8</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">277</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">True</VersionInfo><VersionInfo Name="Locale">1049</VersionInfo><VersionInfo Name="CodePage">1251</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName">Alx Development</VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">8.0.0.277</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright">Schetinin Alexander</VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename">AlxdGrid.dll</VersionInfoKeys><VersionInfoKeys Name="ProductName">ATable for AutoCAD</VersionInfoKeys><VersionInfoKeys Name="ProductVersion">8.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">AlxdGrid.dpr</Source></Source><Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="C:\Documents and Settings\All Users\Documents\RAD Studio\5.0\Bpl\TntUnicodeVcl100.bpl">TntWare Unicode Controls - Runtime</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages><TypeLibOptions><TypeLibOptions Name="AutoRegisterTLB">False</TypeLibOptions><TypeLibOptions Name="AutoGenImportAssembly">False</TypeLibOptions></TypeLibOptions></Delphi.Personality></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="AlxdGrid.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="AlxdGrid_TLB.pas" />
+    <DCCReference Include="uAlxdAbout.pas">
+      <Form>frmAbout</Form>
+    </DCCReference>
+    <DCCReference Include="uAlxdBorder.pas" />
+    <DCCReference Include="uAlxdBorders.pas" />
+    <DCCReference Include="uAlxdCell.pas" />
+    <DCCReference Include="uAlxdCells.pas" />
+    <DCCReference Include="uAlxdEdit.pas" />
+    <DCCReference Include="uAlxdEditor.pas">
+      <Form>frmEditor</Form>
+      <DesignClass>TTntForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uAlxdFill.pas" />
+    <DCCReference Include="uAlxdFills.pas" />
+    <DCCReference Include="uAlxdFormatEditor.pas">
+      <Form>frmAlxdFormatForm</Form>
+    </DCCReference>
+    <DCCReference Include="uAlxdItem.pas" />
+    <DCCReference Include="uAlxdItems.pas" />
+    <DCCReference Include="uAlxdLocalizer.pas" />
+    <DCCReference Include="uAlxdObjectIDs.pas" />
+    <DCCReference Include="uAlxdOptionEditor.pas">
+      <Form>frmAlxdOptionEditor</Form>
+    </DCCReference>
+    <DCCReference Include="uAlxdOptions.pas" />
+    <DCCReference Include="uAlxdPasteSpecial.pas" />
+    <DCCReference Include="uAlxdRegistry.pas" />
+    <DCCReference Include="uAlxdSearchForm.pas">
+      <Form>AlxdSearchForm</Form>
+      <DesignClass>TTntForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uAlxdSpreadSheet.pas" />
+    <DCCReference Include="uAlxdSpreadSheetArray.pas" />
+    <DCCReference Include="uAlxdSpreadSheets.pas" />
+    <DCCReference Include="uAlxdSpreadSheetSelection.pas" />
+    <DCCReference Include="uAlxdSpreadSheetSelections.pas" />
+    <DCCReference Include="uAlxdSpreadSheetStyle.pas" />
+    <DCCReference Include="uAlxdSpreadSheetStyleItem.pas" />
+    <DCCReference Include="uAlxdSpreadSheetStyleItems.pas" />
+    <DCCReference Include="uAlxdStyleEditor.pas">
+      <Form>frmAlxdStyleEditor</Form>
+      <DesignClass>TTntForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uAlxdStyleManager.pas">
+      <Form>frmAlxdStyleManager</Form>
+      <DesignClass>TTntForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uAlxdSystem.pas" />
+    <DCCReference Include="uAlxdTreeView.pas" />
+    <DCCReference Include="uAlxdUndo.pas" />
+    <DCCReference Include="uAlxdValue.pas">
+      <Form>ValueForm</Form>
+      <DesignClass>TTntForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="uoarxImport.pas" />
+    <DCCReference Include="uvclExport.pas" />
+    <DCCReference Include="xAlxdApplication.pas">
+      <CoClasses>AlxdApplication</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdBorder.pas">
+      <CoClasses>AlxdBorder</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdBorders.pas">
+      <CoClasses>AlxdBorders</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdCell.pas">
+      <CoClasses>AlxdCell</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdCells.pas">
+      <CoClasses>AlxdCells</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdEditor.pas">
+      <CoClasses>AlxdEditor</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdFill.pas">
+      <CoClasses>AlxdFill</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdFills.pas">
+      <CoClasses>AlxdFills</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdItem.pas">
+      <CoClasses>AlxdItem</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdItems.pas">
+      <CoClasses>AlxdItems</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdSpreadSheet.pas">
+      <CoClasses>AlxdSpreadSheet</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdSpreadSheets.pas">
+      <CoClasses>AlxdSpreadSheets</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdSpreadSheetSelection.pas">
+      <CoClasses>AlxdSpreadSheetSelection</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdSpreadSheetSelections.pas">
+      <CoClasses>AlxdSpreadSheetSelections</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdSpreadSheetStyle.pas">
+      <CoClasses>AlxdSpreadSheetStyle</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdStyleEditor.pas">
+      <CoClasses>AlxdStyleEditor</CoClasses>
+    </DCCReference>
+    <DCCReference Include="xAlxdStyleManager.pas">
+      <CoClasses>AlxdStyleManager</CoClasses>
+    </DCCReference>
+  </ItemGroup>
+</Project>

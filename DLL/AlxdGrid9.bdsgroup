@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{46D31E1E-2333-4EF1-A419-732AB364059A}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="AlxdGrid.dll">AlxdGrid.bdsproj</Projects>
+      <Projects Name="testModules.exe">testModules.bdsproj</Projects>
+      <Projects Name="Targets">AlxdGrid.dll testModules.exe</Projects>
+    </Projects>
+    <Dependencies>
+      <Dependency GUID="{71E71360-57DA-46A0-A8F6-AF6C6C2B24D2}">
+        <Dependency GUID="{0FCED005-4FF1-439D-A77D-F049CA01110C}"/>
+      </Dependency>
+    </Dependencies>
+  </Default.Personality>
+	<StarTeamAssociation></StarTeamAssociation>
+	<StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

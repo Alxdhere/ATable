@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007.01.30 00:08:56.015.bdsproj,d:\Александр\Borland Studio Projects\Project1.bdsproj=d:\Александр\Borland Studio Projects\AlxdGrid9\AlxdGrid9.bdsproj</Transaction>
+    <Transaction>2007.01.30 00:09:10.531.bdsproj,d:\Александр\Borland Studio Projects\AlxdGrid9\AlxdGrid9.bdsproj=d:\Александр\Borland Studio Projects\AlxdGrid9\AlxdGrid.bdsproj</Transaction>
+    <Transaction>2007.01.30 00:09:44.968.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdApplication.pas</Transaction>
+    <Transaction>2007.01.30 00:10:45.828.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditorForm.pas</Transaction>
+    <Transaction>2007.01.30 00:10:45.828.dfm,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.dfm=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditorForm.dfm</Transaction>
+    <Transaction>2007.01.30 00:15:22.890.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdEditor.pas</Transaction>
+    <Transaction>2007.01.30 21:14:37.468.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdStyleManager.pas</Transaction>
+    <Transaction>2007.01.30 21:32:32.859.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditorForm.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditor.pas</Transaction>
+    <Transaction>2007.01.30 21:32:32.859.dfm,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditorForm.dfm=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEditor.dfm</Transaction>
+    <Transaction>2007.01.30 22:28:41.531.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdStyleEditor.pas</Transaction>
+    <Transaction>2007.01.30 22:55:49.734.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdSpreadSheetStyle.pas</Transaction>
+    <Transaction>2007.01.30 23:05:49.656.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdSpreadSheets.pas</Transaction>
+    <Transaction>2007.01.30 23:05:59.187.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit2.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdSpreadSheet.pas</Transaction>
+    <Transaction>2007.01.31 23:02:30.359.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdCell.pas</Transaction>
+    <Transaction>2007.01.31 23:18:44.343.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdCells.pas</Transaction>
+    <Transaction>2007.02.03 10:29:13.000.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdApreadSheetArray.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetArray.pas</Transaction>
+    <Transaction>2007.02.03 14:22:42.250.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdObjectIDs.pas</Transaction>
+    <Transaction>2007.02.03 22:10:29.703.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdOptions.pas</Transaction>
+    <Transaction>2007.02.07 13:12:58.562.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetSelections.pas</Transaction>
+    <Transaction>2007.02.07 13:14:15.234.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetSelection.pas</Transaction>
+    <Transaction>2007.02.07 15:14:50.125.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdColumns.pas</Transaction>
+    <Transaction>2007.02.07 15:48:08.156.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRows.pas</Transaction>
+    <Transaction>2007.02.10 11:20:07.359.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRow.pas</Transaction>
+    <Transaction>2007.02.10 11:21:37.468.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRow.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdItem.pas</Transaction>
+    <Transaction>2007.02.10 12:54:26.531.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRows.pas=</Transaction>
+    <Transaction>2007.02.10 12:54:36.781.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdColumns.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdItems.pas</Transaction>
+    <Transaction>2007.02.13 15:34:50.265.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdBorder.pas</Transaction>
+    <Transaction>2007.02.14 16:27:17.234.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdBorders.pas</Transaction>
+    <Transaction>2007.02.15 13:17:24.093.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uvclExport.pas</Transaction>
+    <Transaction>2007.02.15 14:13:05.406.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uoarxImport.pas</Transaction>
+    <Transaction>2007.03.04 12:32:36.578.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\ualxdValue.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdValue.pas</Transaction>
+    <Transaction>2007.03.04 12:32:36.578.dfm,d:\Александр\Borland Studio Projects\AlxdGrid9\ualxdValue.dfm=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdValue.dfm</Transaction>
+    <Transaction>2007.03.08 00:08:24.406.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdCells.pas</Transaction>
+    <Transaction>2007.03.08 00:16:50.218.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdCell.pas</Transaction>
+    <Transaction>2007.03.08 08:56:04.703.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit2.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdItem.pas</Transaction>
+    <Transaction>2007.03.08 08:56:10.296.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdItems.pas</Transaction>
+    <Transaction>2007.03.14 18:30:08.062.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdFills.pas</Transaction>
+    <Transaction>2007.03.14 18:31:23.406.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdFill.pas</Transaction>
+    <Transaction>2007.05.23 20:07:57.171.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdEdit.pas</Transaction>
+    <Transaction>2007.11.04 10:18:21.625.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit2.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdAbout.pas</Transaction>
+    <Transaction>2007.11.04 10:18:21.625.dfm,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit2.dfm=G:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdAbout.dfm</Transaction>
+    <Transaction>2007.11.07 20:14:15.093.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdUndo.pas</Transaction>
+    <Transaction>2008.01.27 09:50:05.578.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdFills.pas</Transaction>
+    <Transaction>2008.01.27 09:54:37.781.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdFill.pas</Transaction>
+    <Transaction>2008.01.27 12:45:06.390.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit2.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdBorder.pas</Transaction>
+    <Transaction>2008.01.27 12:45:14.218.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=G:\Александр\Borland Studio Projects\AlxdGrid9\xAlxdBorders.pas</Transaction>
+    <Transaction>2008.09.14 21:53:44.046.pas,G:\Александр\AT8x\DLL\Unit1.pas=G:\Александр\AT8x\DLL\xAlxdSpreadSheetSelections.pas</Transaction>
+    <Transaction>2008.09.14 22:00:25.890.pas,G:\Александр\AT8x\DLL\Unit1.pas=G:\Александр\AT8x\DLL\xAlxdSpreadSheetSelection.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,209 @@
+object frmAlxdOptionEditor: TfrmAlxdOptionEditor
+  Left = 132
+  Top = 140
+  HelpContext = 1500
+  ActiveControl = lbActions
+  BorderIcons = [biSystemMenu]
+  Caption = 'frmAlxdOptionEditor'
+  ClientHeight = 341
+  ClientWidth = 342
+  Color = clBtnFace
+  Constraints.MinHeight = 350
+  Constraints.MinWidth = 350
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poOwnerFormCenter
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  DesignSize = (
+    342
+    341)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object bOk: TButton
+    Left = 165
+    Top = 300
+    Width = 74
+    Height = 26
+    HelpContext = 1500
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object bCancel: TButton
+    Left = 259
+    Top = 300
+    Width = 75
+    Height = 26
+    HelpContext = 1500
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    Caption = 'Cancel'
+    Default = True
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object PageControl: TPageControl
+    Left = 6
+    Top = 8
+    Width = 313
+    Height = 289
+    ActivePage = tsActions
+    TabOrder = 2
+    object tsProperties: TTabSheet
+      Caption = 'tsProperties'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      DesignSize = (
+        305
+        261)
+      object lProperties: TLabel
+        Left = 8
+        Top = 8
+        Width = 49
+        Height = 13
+        Alignment = taRightJustify
+        Caption = 'lProperties'
+      end
+      object lValue: TLabel
+        Left = 8
+        Top = 224
+        Width = 29
+        Height = 13
+        Anchors = [akLeft, akBottom]
+        Caption = 'lValue'
+      end
+      object bvBrowse: TBevel
+        Left = 263
+        Top = 223
+        Width = 23
+        Height = 23
+        Visible = False
+      end
+      object tvProperties: TTntTreeView
+        Left = 8
+        Top = 24
+        Width = 289
+        Height = 188
+        HelpContext = 1500
+        HideSelection = False
+        Indent = 19
+        ReadOnly = True
+        TabOrder = 0
+        OnAdvancedCustomDrawItem = tvPropertiesAdvancedCustomDrawItem
+        OnChanging = tvPropertiesChanging
+        OnDeletion = tvPropertiesDeletion
+        OnKeyPress = tvPropertiesKeyPress
+      end
+      object cbValue: TComboBox
+        Left = 104
+        Top = 224
+        Width = 159
+        Height = 21
+        HelpContext = 1500
+        Style = csSimple
+        Anchors = [akLeft]
+        ItemHeight = 0
+        TabOrder = 1
+        OnSelect = cbValueSelect
+      end
+      object bBrowse: TButton
+        Left = 280
+        Top = 224
+        Width = 21
+        Height = 21
+        HelpContext = 1500
+        Caption = '...'
+        TabOrder = 2
+        Visible = False
+        OnClick = bBrowseClick
+      end
+      object cbColor: TColorBox
+        Left = 84
+        Top = 224
+        Width = 145
+        Height = 22
+        Style = [cbStandardColors, cbExtendedColors, cbSystemColors, cbCustomColor, cbPrettyNames]
+        ItemHeight = 16
+        TabOrder = 3
+        Visible = False
+      end
+    end
+    object tsActions: TTabSheet
+      Caption = 'tsActions'
+      ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+      DesignSize = (
+        305
+        261)
+      object lActions: TLabel
+        Left = 8
+        Top = 8
+        Width = 37
+        Height = 13
+        Caption = 'lActions'
+      end
+      object lHotkey: TLabel
+        Left = 8
+        Top = 227
+        Width = 36
+        Height = 13
+        Anchors = [akLeft, akBottom]
+        Caption = 'lHotkey'
+      end
+      object bvClear: TBevel
+        Left = 263
+        Top = 223
+        Width = 23
+        Height = 23
+      end
+      object lbActions: TListBox
+        Left = 8
+        Top = 24
+        Width = 289
+        Height = 188
+        HelpContext = 1500
+        Style = lbOwnerDrawFixed
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Color = clBtnFace
+        ExtendedSelect = False
+        ItemHeight = 18
+        TabOrder = 0
+        OnClick = lbActionsClick
+        OnDrawItem = lbActionsDrawItem
+      end
+      object hkAction: THotKey
+        Left = 104
+        Top = 224
+        Width = 161
+        Height = 19
+        HelpContext = 1500
+        Anchors = [akLeft, akRight, akBottom]
+        HotKey = 0
+        Modifiers = []
+        TabOrder = 1
+        OnChange = hkActionChange
+      end
+      object bClear: TButton
+        Left = 280
+        Top = 224
+        Width = 21
+        Height = 21
+        HelpContext = 1500
+        Caption = 'X'
+        TabOrder = 2
+        OnClick = bClearClick
+      end
+    end
+  end
+end

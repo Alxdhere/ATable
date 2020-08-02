@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007.01.30 00:09:05.171.bdsgroup,d:\Александр\Borland Studio Projects\ProjectGroup1.bdsgroup=d:\Александр\Borland Studio Projects\AlxdGrid9\AlxdGrid9.bdsgroup</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="testModules.exe"/>
+	</Default.Personality>
+</BorlandProject>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2007.01.30 00:27:17.156.pas,d:\Александр\Borland Studio Projects\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\testModule1.pas</Transaction>
+    <Transaction>2007.01.30 00:27:17.156.dfm,d:\Александр\Borland Studio Projects\Unit1.dfm=d:\Александр\Borland Studio Projects\AlxdGrid9\testModule1.dfm</Transaction>
+    <Transaction>2007.01.30 00:27:25.031.bdsproj,d:\Александр\Borland Studio Projects\Project1.bdsproj=d:\Александр\Borland Studio Projects\AlxdGrid9\testModules.bdsproj</Transaction>
+    <Transaction>2007.03.18 10:00:51.921.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetStyleItems.pas</Transaction>
+    <Transaction>2007.03.18 10:00:59.625.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetStyleItem.pas</Transaction>
+    <Transaction>2007.03.18 11:02:45.250.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\Unit1.pas=d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRegistry.pas</Transaction>
+    <Transaction>2007.04.11 21:28:09.203.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetStyleItems.pas=</Transaction>
+    <Transaction>2007.04.11 21:28:15.015.pas,d:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdSpreadSheetStyleItem.pas=</Transaction>
+    <Transaction>2007.11.01 21:43:55.718.pas,G:\Александр\Borland Studio Projects\AlxdGrid9\uAlxdRegistry.pas=</Transaction>
+  </Transactions>
+</BorlandProject>

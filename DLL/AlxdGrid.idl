@@ -1,0 +1,519 @@
+[
+  uuid(D2DEE2CC-FA88-45B9-95BF-15738EE55F59), 
+  version(1.0), 
+  helpstring("AlxdGrid Library")
+    
+]
+library AlxdGrid
+{
+
+  importlib("stdole2.tlb");
+
+  [
+    uuid(0DA62DC9-B4C4-495B-A819-FD451C346A1F), 
+    version(1.0), 
+    helpstring("AlxdApplication Object")
+  ]
+  coclass AlxdApplication
+  {
+    [default] interface IAlxdApplication;
+  };
+
+  [
+    uuid(4E3C34FE-4736-4617-BE2D-BE35FE624F04), 
+    version(1.0), 
+    helpstring("AlxdEditor Object")
+  ]
+  coclass AlxdEditor
+  {
+    [default] interface IAlxdEditor;
+  };
+
+  [
+    uuid(52A7AAB2-0A27-40B7-B0D3-98E643167F7C), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdStyleManager Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdStyleManager: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Show( void );
+    [
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall Select([in, out] BSTR * Value, [out, retval] long * Result );
+  };
+
+  [
+    uuid(48D27E0A-7942-4AF8-8FF5-046467ED0BA3), 
+    version(1.0), 
+    helpstring("AlxdStyleManager Object")
+  ]
+  coclass AlxdStyleManager
+  {
+    [default] interface IAlxdStyleManager;
+  };
+
+  [
+    uuid(81654EE7-66A5-4234-8D13-0728014B883F), 
+    version(1.0), 
+    helpstring("AlxdStyleEditor Object")
+  ]
+  coclass AlxdStyleEditor
+  {
+    [default] interface IAlxdStyleEditor;
+  };
+
+  [
+    uuid(E86511D8-F982-4F32-A158-539B5DD6F496), 
+    version(1.0), 
+    helpstring("AlxdSpreadSheetStyle Object")
+  ]
+  coclass AlxdSpreadSheetStyle
+  {
+    [default] interface IAlxdSpreadSheetStyle;
+  };
+
+  [
+    uuid(B3B7BA22-BB9E-4E2B-9B77-1785FD739959), 
+    version(1.0), 
+    helpstring("AlxdSpreadSheets Object")
+  ]
+  coclass AlxdSpreadSheets
+  {
+    [default] interface IAlxdSpreadSheets;
+  };
+
+  [
+    uuid(7637CA13-24CC-4F96-913D-39B409DB9330), 
+    version(1.0), 
+    helpstring("AlxdSpreadSheet Object")
+  ]
+  coclass AlxdSpreadSheet
+  {
+    [default] interface IAlxdSpreadSheet;
+  };
+
+  [
+    uuid(B78BB1AF-934A-45D9-ACFB-FC8D3FC31903), 
+    version(1.0), 
+    helpstring("AlxdCells Object")
+  ]
+  coclass AlxdCells
+  {
+    [default] interface IAlxdCells;
+  };
+
+  [
+    uuid(8314D92C-64DD-4FDD-B0D7-8621A2A7381E), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdCell Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdCell: IDispatch
+  {
+    [
+    propget, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Contain([out, retval] BSTR * Value );
+    [
+    propput, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Contain([in] BSTR Value );
+  };
+
+  [
+    uuid(71D9AEB6-05A7-4E17-928C-FD200DD30B86), 
+    version(1.0), 
+    helpstring("AlxdCell Object")
+  ]
+  coclass AlxdCell
+  {
+    [default] interface IAlxdCell;
+  };
+
+  [
+    uuid(8A738D0E-0602-4E9B-AF7C-6562D76BE792), 
+    version(1.0), 
+    helpstring("AlxdItems Object")
+  ]
+  coclass AlxdItems
+  {
+    [default] interface IAlxdItems;
+  };
+
+  [
+    uuid(7DF2E429-12C0-4B8F-BC9A-99E3E1910273), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdItem Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdItem: IDispatch
+  {
+    [
+    propget, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall PropertyByNum([in] long Index, [out, retval] VARIANT * Value );
+    [
+    propput, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall PropertyByNum([in] long Index, [in] VARIANT Value );
+  };
+
+  [
+    uuid(109DADD7-CF88-4212-B997-BFDB3B737F09), 
+    version(1.0), 
+    helpstring("AlxdItem Object")
+  ]
+  coclass AlxdItem
+  {
+    [default] interface IAlxdItem;
+  };
+
+  [
+    uuid(DD213446-A835-4400-9C63-D44C3ED9E6D3), 
+    version(1.0)
+  ]
+  typedef enum tagAlxdJustify
+  {
+    TopLeft = 0, 
+    TopRight = 1, 
+    BottomLeft = 2, 
+    BottomRight = 3
+  } AlxdJustify;
+
+  [
+    uuid(802F37A5-AE5E-47FA-816B-82D64BE71963), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdApplication Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdApplication: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Quit( void );
+    [
+    propget, 
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall AlxdEditor([out, retval] IAlxdEditor ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall AlxdStyleManager([out, retval] IAlxdStyleManager ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000CC)
+    ]
+    HRESULT _stdcall AlxdStyleEditor([out, retval] IAlxdStyleEditor ** Value /*Warning: unable to validate structure name: */ );
+    [
+    id(0x000000CD)
+    ]
+    HRESULT _stdcall CreateAlxdSpreadSheetStyle([out, retval] AlxdSpreadSheetStyle ** Result /*Warning: unable to validate structure name: */ );
+  };
+
+  [
+    uuid(BA4809C9-7225-4C9E-8A4C-D118D3FF33C0), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdEditor Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdEditor: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Open( void );
+    [
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall Close( void );
+    [
+    propget, 
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall AlxdSpreadSheets([out, retval] AlxdSpreadSheets ** Value /*Warning: unable to validate structure name: */ );
+  };
+
+  [
+    uuid(A459F0B4-A7F6-48EB-9FD0-0E0F5769E428), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdStyleEditor Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdStyleEditor: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Edit([in] AlxdSpreadSheetStyle * Value /*Warning: unable to validate structure name: */, [out, retval] long * Result );
+  };
+
+  [
+    uuid(96ED91F3-F061-4559-9751-A84DBDC4EC45), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdSpreadSheetStyle Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdSpreadSheetStyle: IDispatch
+  {
+    [
+    propget, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall ColCount([out, retval] long * Value );
+    [
+    propput, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall ColCount([in] long Value );
+    [
+    propget, 
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall RowCount([out, retval] long * Value );
+    [
+    propput, 
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall RowCount([in] long Value );
+    [
+    propget, 
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall PropertyByNum([in] long Index, [out, retval] VARIANT * Value );
+    [
+    propput, 
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall PropertyByNum([in] long Index, [in] VARIANT Value );
+    [
+    id(0x000000CC)
+    ]
+    HRESULT _stdcall LoadFrom([in] BSTR FullFileName, [out, retval] VARIANT_BOOL * Result );
+    [
+    id(0x000000CD)
+    ]
+    HRESULT _stdcall CopyFrom([in] IAlxdSpreadSheetStyle * Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000CE)
+    ]
+    HRESULT _stdcall Pointer([out, retval] long * Value );
+    [
+    propget, 
+    id(0x000000CF)
+    ]
+    HRESULT _stdcall Justify([out, retval] AlxdJustify * Value /*Warning: unable to validate structure name: */ );
+    [
+    propput, 
+    id(0x000000CF)
+    ]
+    HRESULT _stdcall Justify([in] AlxdJustify Value /*Warning: unable to validate structure name: */ );
+  };
+
+  [
+    uuid(F198C064-FFB4-4A24-A123-E46FFF472E4B), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdSpreadSheets Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdSpreadSheets: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Add([out, retval] long * Result );
+    [
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall Insert([in] long Index );
+    [
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall Delete([in] long Index );
+    [
+    propget, 
+    id(0x000000CC)
+    ]
+    HRESULT _stdcall Count([out, retval] long * Value );
+    [
+    propget, 
+    id(0x000000CD)
+    ]
+    HRESULT _stdcall Items([in] long Index, [out, retval] IAlxdSpreadSheet ** Value /*Warning: unable to validate structure name: */ );
+    [
+    id(0x000000CE)
+    ]
+    HRESULT _stdcall Exchange([in] long Index1, [in] long Index2 );
+    [
+    propget, 
+    id(0x000000CF)
+    ]
+    HRESULT _stdcall Active([out, retval] long * Value );
+    [
+    propput, 
+    id(0x000000CF)
+    ]
+    HRESULT _stdcall Active([in] long Value );
+    [
+    id(0x000000D0)
+    ]
+    HRESULT _stdcall HasByDef([in] long id, [out, retval] VARIANT_BOOL * Result );
+    [
+    id(0x000000D1)
+    ]
+    HRESULT _stdcall HasByRef([in] long id, [out, retval] VARIANT_BOOL * Result );
+  };
+
+  [
+    uuid(41185042-5256-43F7-80AA-C38D5DA3C301), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdSpreadSheet Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdSpreadSheet: IDispatch
+  {
+    [
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall AddRows([in] long Count );
+    [
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall InsertRows( void );
+    [
+    id(0x000000CB)
+    ]
+    HRESULT _stdcall DeleteRows( void );
+    [
+    id(0x000000CC)
+    ]
+    HRESULT _stdcall AddColumns([in] long Count );
+    [
+    id(0x000000CD)
+    ]
+    HRESULT _stdcall InsertColumns( void );
+    [
+    id(0x000000CE)
+    ]
+    HRESULT _stdcall DeleteColumns( void );
+    [
+    id(0x000000CF)
+    ]
+    HRESULT _stdcall CreateBlockDefinition( void );
+    [
+    id(0x000000D0)
+    ]
+    HRESULT _stdcall RedrawBlockDefinition( void );
+    [
+    propget, 
+    id(0x000000D1)
+    ]
+    HRESULT _stdcall BlockDefinitionID([out, retval] long * Value );
+    [
+    propget, 
+    id(0x000000D2)
+    ]
+    HRESULT _stdcall BlockReferenceID([out, retval] long * Value );
+    [
+    propput, 
+    id(0x000000D2)
+    ]
+    HRESULT _stdcall BlockReferenceID([in] long Value );
+    [
+    id(0x000000D3)
+    ]
+    HRESULT _stdcall WriteToDictionary([out, retval] VARIANT_BOOL * Result );
+    [
+    id(0x000000D4)
+    ]
+    HRESULT _stdcall ReadFromDictionary([out, retval] VARIANT_BOOL * Result );
+    [
+    propget, 
+    id(0x000000D5)
+    ]
+    HRESULT _stdcall AlxdSpreadSheetStyle([out, retval] AlxdSpreadSheetStyle ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000D6)
+    ]
+    HRESULT _stdcall AlxdCells([out, retval] AlxdCells ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000D7)
+    ]
+    HRESULT _stdcall DictionaryID([out, retval] long * Value );
+    [
+    propget, 
+    id(0x000000D8)
+    ]
+    HRESULT _stdcall AlxdColumns([out, retval] AlxdItems ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000D9)
+    ]
+    HRESULT _stdcall AlxdRows([out, retval] AlxdItems ** Value /*Warning: unable to validate structure name: */ );
+    [
+    id(0x000000DA)
+    ]
+    HRESULT _stdcall Recalculate([out, retval] VARIANT_BOOL * Result );
+  };
+
+  [
+    uuid(59451D33-94A3-4A9B-8A78-A7EEC2A01D35), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdCells Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdCells: IDispatch
+  {
+    [
+    propget, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Items([in] long Col, [in] long Row, [out, retval] AlxdCell ** Value /*Warning: unable to validate structure name: */ );
+  };
+
+  [
+    uuid(35EEFA2D-07BA-455A-A3C1-B3B9C23E05D0), 
+    version(1.0), 
+    helpstring("Dispatch interface for AlxdItems Object"), 
+    dual, 
+    oleautomation
+  ]
+   interface IAlxdItems: IDispatch
+  {
+    [
+    propget, 
+    id(0x000000C9)
+    ]
+    HRESULT _stdcall Items([in] long Index, [out, retval] AlxdItem ** Value /*Warning: unable to validate structure name: */ );
+    [
+    propget, 
+    id(0x000000CA)
+    ]
+    HRESULT _stdcall Index([in] double Coord, [out, retval] long * Value );
+  };
+
+};
